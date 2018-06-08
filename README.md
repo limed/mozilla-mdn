@@ -10,14 +10,14 @@ There are 3 main modules in `maint.tf`
 - `mdn_shared`: Deploys redis, memcached, efs and RDS
 
 ## Pre-requisites
-We use a tool called `nubis-ctl`(https://github.com/nubisproject/nubis-ctl) to
+We use a tool called [nubis-ctl](https://github.com/nubisproject/nubis-ctl) to
 deploy this. Installation instructions for this tool can be found
 [here](https://github.com/nubisproject/nubis-ctl#installation-instructions)
 
 In order to run `nubis-ctl` you will need the following tools installed locally
 
-- docker (https://docker.io)
-- aws-vault (https://github.com/99designs/aws-vault)
+- [docker](https://docker.io)
+- [aws-vault](https://github.com/99designs/aws-vault)
 
 ## How to deploy
 
