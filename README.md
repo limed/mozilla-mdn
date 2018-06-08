@@ -12,7 +12,7 @@ There are 3 main modules in `maint.tf`
 ## Pre-requisites
 We use a tool called `nubis-ctl`(https://github.com/nubisproject/nubis-ctl) to
 deploy this. Installation instructions for this tool can be found
-[here] (https://github.com/nubisproject/nubis-ctl#installation-instructions)
+[here](https://github.com/nubisproject/nubis-ctl#installation-instructions)
 
 In order to run `nubis-ctl` you will need the following tools installed locally
 
@@ -38,4 +38,4 @@ And if you want to deploy run the following
 ```
 
 There is more information on how to use `nubis-ctl`
-[here] (https://github.com/nubisproject/nubis-ctl#operational-instructions)
+[here](https://github.com/nubisproject/nubis-ctl#operational-instructions)
