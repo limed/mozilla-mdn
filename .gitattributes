@@ -1,0 +1,2 @@
+terraform.tfvars
+nubis/terraform/terraform.tfvars filter=git-crypt diff=git-crypt

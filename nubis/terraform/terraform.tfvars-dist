@@ -1,0 +1,19 @@
+account      = "mozilla-mdn"
+region       = "us-west-2"
+service_name = "mdn-infra"
+environment  = "stage"
+arena        = "core"
+
+# Want mdn resources deployed in multiple regions?
+# here is how you do it, add a comma seperated list of regions
+#
+# Caveat: the nubis team will need to deploy the vpc's in the region you want
+regions = "us-west-2"
+
+# RDS password taken from mdn-k8s-private
+rds = {
+  password.stage = ""
+  password.prod  = ""
+}
+
+# If you have sensitive passwords put it here
