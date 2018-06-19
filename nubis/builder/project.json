@@ -1,0 +1,6 @@
+{
+  "variables": {
+    "project_description": "Deploys mozilla mdn infra resources",
+    "skip_build": "true"
+  }
+}
