@@ -1,6 +1,14 @@
 # mozilla-mdn
 
-What is this repo? This is the repo we are using to call the mozilla-mdn infrastructure modules
+What is this repo? This is the repo we are using to call the mozilla-mdn infrastructure modules.
+
+## Background
+
+Production MDN infrastructure is defined in Terraform code and lives in https://github.com/mdn/infra.
+
+As we migrate MDN to Nubis, we have refactored the Terraform code to be callable modules. This refactor exists in a fork at https://github.com/limed/infra/, and will continue to live there until https://github.com/mdn/infra/pull/4 is merged. We're blocked on merging that PR, as our refactor is incompatible with the existing production usage of the Terraform code in mdn/infra.
+
+This repository is the root of our deployed Nubis terraform infrastructure for MDN, and it calls the modules defined in limed/infra. Once we're able to merge https://github.com/mdn/infra/pull/4, we will change the module invocations in this repo to point to mdn/infra.
 
 ## Modules
 
