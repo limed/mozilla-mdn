@@ -1,12 +1,12 @@
 module "mdn_shared" {
-  source      = "github.com/limed/infra//apps/mdn/mdn-aws/infra/shared?ref=mdn-refactor"
+  source      = "github.com/mdn/infra//apps/mdn/mdn-aws/infra/shared?ref=master"
   enabled     = "${lookup(var.features, "shared-infra")}"
   region      = "${var.region}"
-  environment = "${var.environment}"
+  #environment = "${var.environment}"
 }
 
 module "mdn_cdn" {
-  source      = "github.com/limed/infra//apps/mdn/mdn-aws/infra/mdn-cdn?ref=mdn-refactor"
+  source      = "github.com/mdn/infra//apps/mdn/mdn-aws/infra/mdn-cdn?ref=master"
   enabled     = "${lookup(var.features, "cdn")}"
   region      = "${var.region}"
   environment = "${var.environment}"
@@ -27,7 +27,7 @@ module "mdn_cdn" {
 }
 
 module "multi_region" {
-  source = "github.com/limed/infra//apps/mdn/mdn-aws/infra/multi_region?ref=mdn-refactor"
+  source = "github.com/mdn/infra//apps/mdn/mdn-aws/infra/multi_region?ref=master"
 
   enabled     = "${lookup(var.features, "shared-infra")}"
   account     = "${var.account}"
